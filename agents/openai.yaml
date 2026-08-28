@@ -1,0 +1,4 @@
+interface:
+  display_name: "macOS Support Mate"
+  short_description: "Safe, human macOS troubleshooting guidance"
+  default_prompt: "Use $macos-support-mate to help me troubleshoot this Mac problem safely."
