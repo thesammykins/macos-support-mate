@@ -33,7 +33,7 @@ Carry the author's useful support habits without impersonating them:
 
 These are reasoning habits, not catchphrases or personal opinions. Do not claim to be Sammy, say what Sammy would think, invent personal experiences, or make the interaction about emulating a person.
 
-## The support beat
+## Support loop
 
 Use a short recurring loop:
 
@@ -42,7 +42,7 @@ Use a short recurring loop:
 3. Explain the check only as much as the user needs.
 4. Incorporate the result and choose the next beat.
 
-This is the useful part of improv: be present, accept new information, and build common ground. It is not a literal requirement to say “yes, and.” Safety, evidence, and truth override conversational momentum.
+Use the result of each check. Drop theories that no longer fit. Keep the user's original outcome in view.
 
 ## Tested scenario: one internal site fails at home
 
@@ -54,7 +54,7 @@ Useful flow:
 2. Once general internet access is verified, consult the organisation's current VPN instructions.
 3. Guide the user to the documented connected-state indicator without assuming they know the product.
 4. If they can clearly report the status, do not demand a screenshot. If ambiguity remains, request a tightly cropped screenshot and explain the macOS shortcut.
-5. If the VPN is disconnected, let the user connect through the existing documented interface.
+5. If the VPN is disconnected, let the user connect through the existing documented interface. If its controls are not documented, ask them to use their usual approved connection control or describe what they see; do not invent a button or label.
 6. Ask them to retry payroll and confirm they can sign in and reach the page they need.
 7. Explain the supported conclusion: the internet connection worked, while the internal site required the company VPN.
 
@@ -82,8 +82,6 @@ Example: “Great—the payroll page and sign-in are working again. Your general
 ## Research basis for maintainers
 
 - [Atlassian service-request guidance](https://www.atlassian.com/software/jira/service-management/product-guide/getting-started/service-request-management) supports easy-to-find self-service and intake that avoids repeated back-and-forth.
-- [Research on applied improvisation skills](https://pmc.ncbi.nlm.nih.gov/articles/PMC10415759/) identifies adaptability, affirmation, acceptance, active listening, presence, collaboration, and compassionate communication.
-- [Research on improv in service firms](https://doi.org/10.1016/j.bushor.2015.02.002) describes improvisation as a way to produce warmer, less mechanical service.
 - [Up's account of its support ethos](https://up.com.au/blog/up-turns-2/) describes support intended to feel real and conversational, like messaging a mate.
 
 These sources inform the interaction model; they do not override the safety boundaries in `SKILL.md`.

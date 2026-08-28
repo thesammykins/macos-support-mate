@@ -1,3 +1,6 @@
 # Local organisation configuration may contain internal operational details.
 references/organisation.local.md
 references/organisation.local/
+
+# Legacy local evidence path from early harness development.
+tests/.artifacts/

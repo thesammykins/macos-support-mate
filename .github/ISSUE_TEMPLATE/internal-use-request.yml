@@ -1,0 +1,61 @@
+name: Internal-use permission request
+description: Request written permission to use macOS Support Mate inside an organisation.
+title: "Internal-use request: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        PolyForm Noncommercial does not automatically license commercial use. Use this form to describe a proposed internal deployment.
+
+        GitHub issues may be public. Do not include confidential architecture, security controls, employee data, private URLs, or secrets. Opening this issue does not grant permission. Permission exists only when the copyright holder replies in writing with an explicit scope.
+  - type: input
+    id: organisation
+    attributes:
+      label: Organisation
+      description: Public name of the organisation requesting permission.
+      placeholder: Example Pty Ltd
+    validations:
+      required: true
+  - type: input
+    id: website
+    attributes:
+      label: Public website
+      description: Optional public website or other non-confidential identifier.
+    validations:
+      required: false
+  - type: textarea
+    id: use
+    attributes:
+      label: Intended internal use
+      description: Describe who would use the skill, the support setting, and the approximate scale. Keep operational details high-level.
+      placeholder: We want to use it with employees for first-line macOS troubleshooting...
+    validations:
+      required: true
+  - type: dropdown
+    id: access
+    attributes:
+      label: Who will have access?
+      options:
+        - Employees and contractors only
+        - Customers or external users
+        - Both internal and external users
+    validations:
+      required: true
+  - type: textarea
+    id: changes
+    attributes:
+      label: Planned adaptations
+      description: Summarise changes to the skill, integrations, branding, or support workflow.
+    validations:
+      required: true
+  - type: checkboxes
+    id: declarations
+    attributes:
+      label: Declarations
+      options:
+        - label: The skill will not be sold, licensed onward, or offered as a paid product or managed service unless separately agreed in writing.
+          required: true
+        - label: The deployment will not claim to be Sammy or imply Sammy's endorsement, employment, or participation.
+          required: true
+        - label: I understand that opening this issue does not grant permission.
+          required: true

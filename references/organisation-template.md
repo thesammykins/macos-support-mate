@@ -56,4 +56,7 @@ Record minimal identifiers only. Do not include certificate contents, secrets, f
 - Ordinary resolution scenario:
 - IT-controlled or sandbox-limited handoff scenario:
 - Security-stop scenario:
+- Organisation-specific regression cases added:
+- Runtime denials verified in an isolated test environment:
+- Codex CLI, model, skill version, and evidence location:
 - Unresolved deployment blockers:

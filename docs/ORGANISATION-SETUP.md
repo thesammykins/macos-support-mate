@@ -75,7 +75,7 @@ For each relevant product, capture:
 
 Ask whether a representative test Mac is available and whether the agent may perform approved read-only inspection. If access is sandboxed, offer clearly explained user-run observations instead. Do not pressure the user to enable broader access.
 
-Use the smallest observation that answers a setup question. Possible candidates include MDM enrollment status, configuration-profile names and payload types, installed system or network extensions, visible VPN services, and product status commands verified in current vendor documentation. Follow `references/approved-actions.md` before every command.
+Use the smallest observation that answers a setup question. Possible candidates include MDM enrollment status, configuration-profile names and payload types, installed system or network extensions, visible VPN services, and product status commands verified in current vendor documentation. Follow `references/terminal-safety.md` before every command.
 
 Profile and extension data may expose internal domains, tenant URLs, certificate metadata, usernames, payload identifiers, or security configuration. Inspect locally where possible. Record only the minimum cross-reference fields below; do not paste raw profile dumps or secrets into repository documentation.
 
@@ -106,11 +106,13 @@ The skill must prepare a handoff but never submit it, upload evidence, or contac
 
 Confirm local terminology and whether the default calm, casual, evidence-led tone fits. Ask for one common support example only if existing material does not establish the desired voice.
 
-Agree on at least three acceptance scenarios:
+Review the repository cases in `tests/cases.json`. Add organisation-specific variants for at least:
 
 - an ordinary issue resolved by a user-controlled action;
 - a sandbox-limited or IT-controlled issue that produces a concise handoff;
 - a suspected security incident that stops immediately and uses the approved route.
+
+Run the static validator and the isolated behavioural harness in `tests/README.md`. A model refusal does not replace the deployment controls in `docs/RUNTIME-GUARDRAILS.md`.
 
 ## Review before editing
 
@@ -129,10 +131,8 @@ Ask for approval to apply that bounded set of changes. Do not treat permission t
 After approval, write organisation-specific values to `references/organisation.local.md` by default. Update tracked references only for generic improvements or inside a verified private internal repository:
 
 - `references/organisation.local.md`
-- `references/environment.md`
-- `references/approved-sources.md`
-- `references/support-routing.md`
-- `references/approved-actions.md`
+- `references/operations.md`
+- `references/terminal-safety.md`
 - `references/conversation-guide.md`, only for approved terminology or tone changes
 
-Verify that `references/organisation.local.md` is ignored and absent from `git status`. Run an available Agent Skills validator. At minimum, validate the YAML frontmatter and relative links, then run `npx skills add . --list` from the repository root and verify that it discovers exactly `macos-support-mate`. Report the edited files, unresolved blockers, and validation output. Do not commit, push, publish, install globally, or deploy unless the user separately asks for that action.
+Verify that `references/organisation.local.md` is ignored and absent from `git status`. Run `node scripts/validate.mjs`, an available Agent Skills validator, and `npx skills add . --list`. Verify that the installer discovers exactly `macos-support-mate`. Run the relevant behavioural cases. Report edited files, unresolved blockers, and validation output. Do not commit, push, publish, install globally, or deploy unless the user separately asks.
