@@ -4,12 +4,12 @@ A calm, safety-bounded Agent Skill for everyday macOS troubleshooting before a h
 
 It helps an agent isolate ordinary Mac problems, distinguish evidence from assumptions, use documented self-service workflows, stop for security incidents, and prepare concise user-submitted handoffs.
 
-The repository is named `not-sammy-skill` to make its identity boundary explicit. The installable skill and public display name are consistently `macos-support-mate` and **macOS Support Mate**.
+The repository, installable skill, and public display name are consistently `macos-support-mate` and **macOS Support Mate**. The identity boundary is documented in [PERSONA.md](PERSONA.md).
 
 ## Install with the Skills CLI
 
 ```sh
-npx skills add thesammykins/not-sammy-skill
+npx skills add thesammykins/macos-support-mate
 ```
 
 The installer discovers `macos-support-mate` from the root `SKILL.md`.
@@ -19,7 +19,7 @@ The installer discovers `macos-support-mate` from the root `SKILL.md`.
 If the destination does not already exist:
 
 ```sh
-mkdir -p ~/.agents/skills && git clone https://github.com/thesammykins/not-sammy-skill.git ~/.agents/skills/macos-support-mate
+mkdir -p ~/.agents/skills && git clone https://github.com/thesammykins/macos-support-mate.git ~/.agents/skills/macos-support-mate
 ```
 
 The command creates the skills directory and clones the repository into its own folder. It does not overwrite an existing installation. Restart or reload the agent if it does not discover the skill automatically.
@@ -37,7 +37,7 @@ The generic skill works for personal, non-commercial troubleshooting. Managed en
 Give an agent this prompt:
 
 ```text
-Set up macOS Support Mate for my environment. If the current directory contains the not-sammy-skill repository, use it. Otherwise clone https://github.com/thesammykins/not-sammy-skill.git into a new not-sammy-skill folder in the current workspace without overwriting anything. Read docs/ORGANISATION-SETUP.md completely and follow it.
+Set up macOS Support Mate for my environment. If the current directory contains the macos-support-mate repository, use it. Otherwise clone https://github.com/thesammykins/macos-support-mate.git into a new macos-support-mate folder in the current workspace without overwriting anything. Read docs/ORGANISATION-SETUP.md completely and follow it.
 
 Offer a guided interview or a dictation-friendly pass. Partial answers and “unknown” are fine. Ask no more than three closely related questions at once. Do not ask for secrets. Inspect repository remotes before collecting internal details. In a checkout connected to the public repository, write organisation configuration only to the gitignored references/organisation.local.md overlay. Summarise proposed edits and wait for approval. Do not commit, push, publish, install, or deploy unless separately asked.
 ```
@@ -78,6 +78,6 @@ SPDX identifier: `PolyForm-Noncommercial-1.0.0`
 
 Commercial use is not licensed by default. This includes selling the skill, charging for access, incorporating it into paid support, or offering a monetised derivative.
 
-A for-profit organisation seeking internal-only use can [open an internal-use permission request](https://github.com/thesammykins/not-sammy-skill/issues/new?template=internal-use-request.yml). Keep the issue non-confidential. Opening an issue is only a request; permission exists only after the copyright holder replies in writing with an explicit scope.
+A for-profit organisation seeking internal-only use can [open an internal-use permission request](https://github.com/thesammykins/macos-support-mate/issues/new?template=internal-use-request.yml). Keep the issue non-confidential. Opening an issue is only a request; permission exists only after the copyright holder replies in writing with an explicit scope.
 
 This project does not grant rights to use the author's name, likeness, voice, identity, or endorsement. See [PERSONA.md](PERSONA.md).
