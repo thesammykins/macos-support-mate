@@ -6,6 +6,10 @@ It helps an agent isolate ordinary Mac problems, distinguish evidence from assum
 
 The repository, installable skill, and public display name are consistently `macos-support-mate` and **macOS Support Mate**. The identity boundary is documented in [PERSONA.md](PERSONA.md).
 
+If my Support Mate skill is useful to you, you can support its continued development.
+
+<a href="https://ko-fi.com/sammykins/tip"><img src="https://cdn.prod.website-files.com/5c14e387dab576fe667689cf/670f5a01c01ea9191809398c_support_me_on_kofi_blue.avif" alt="Support macOS Support Mate on Ko-fi" height="32"></a>
+
 ## Install with the Skills CLI
 
 ```sh
